@@ -1,0 +1,14 @@
+<ion-content [fullscreen]="true">
+  <ion-toolbar>
+    <ion-text color="primary">
+      <h1>Lista de Usuarios</h1>
+    </ion-text>
+  </ion-toolbar>
+  <ion-list>
+    @for (usuario of usuarios; track $index) {
+      <ion-item (click)="openModal(usuario.id)">
+        <ion-label>{{usuario.name}}</ion-label>
+      </ion-item>
+    }
+  </ion-list>
+</ion-content>
