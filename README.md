@@ -1,0 +1,2 @@
+# pruebaBlueCore
+BlueCore Prueba Test
